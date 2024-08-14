@@ -14,7 +14,6 @@ const truncatedDescription = computed(() => {
 function toggleFullDescription() {
     showFullDescription.value = !showFullDescription.value;
 }
-
 </script>
 
 <template>
@@ -41,7 +40,7 @@ function toggleFullDescription() {
                     <i class="pi pi-map-marker text-inherit"></i>
                     {{ job.location }}
                 </div>
-                <a href="job.html"
+                <a :href="'/job/' + job.id"
                    class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
                     Read More
                 </a>
