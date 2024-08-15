@@ -41,7 +41,7 @@ function toggleFullDescription() {
                     <i class="pi pi-map-marker text-inherit"></i>
                     {{ job.location }}
                 </div>
-                <RouterLink :to="'/job/' + job.id"
+                <RouterLink :to="'/jobs/' + job.id"
                             class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
                     Read More
                 </RouterLink>
