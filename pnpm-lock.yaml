@@ -23,6 +23,9 @@ importers:
       vue-router:
         specifier: ^4.4.3
         version: 4.4.3(vue@3.4.37)
+      vue-spinner:
+        specifier: ^1.0.4
+        version: 1.0.4
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.1.2
@@ -1034,6 +1037,9 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
+  vue-spinner@1.0.4:
+    resolution: {integrity: sha512-GNG2F+8BLX201JT/jUX+84Gsi3ZteVQwt9K7mues3ts9FcQ95dGn7uu6a5ndSxdYYUEzfh1KngZiOE0u+l4itA==}
+
   vue@3.4.37:
     resolution: {integrity: sha512-3vXvNfkKTBsSJ7JP+LyR7GBuwQuckbWvuwAid3xbqK9ppsKt/DUvfqgZ48fgOLEfpy1IacL5f8QhUVl77RaI7A==}
     peerDependencies:
@@ -1931,6 +1937,8 @@ snapshots:
     dependencies:
       '@vue/devtools-api': 6.6.3
       vue: 3.4.37
+
+  vue-spinner@1.0.4: {}
 
   vue@3.4.37:
     dependencies:
