@@ -44,7 +44,7 @@ const handleSubmit = async () => {
     };
 
     try {
-        const res = await axios.patch(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`, updatedJob);
+        const res = await axios.patch(`/api/jobs/${jobId}`, updatedJob);
         router.push(`/jobs/${res.data.id}`);
         toast.success("Job Was Updated Successfully");
     } catch (error) {
@@ -55,7 +55,7 @@ const handleSubmit = async () => {
 
 onMounted(async () => {
     try {
-        const res = await axios.get(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`);
+        const res = await axios.get(`/api/jobs/${jobId}`);
         state.job = res.data;
         form.type = state.job.type;
         form.title = state.job.title;

@@ -20,7 +20,7 @@ const deleteJob = async () => {
 
     if (confirmation) {
         try {
-            await axios.delete(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`);
+            await axios.delete(`/api/jobs/${jobId}`);
             toast.success("Job Was Deleted Successfully");
             router.push("/jobs");
         } catch (error) {
@@ -32,7 +32,7 @@ const deleteJob = async () => {
 
 onMounted(async () => {
     try {
-        const res = await axios.get(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`);
+        const res = await axios.get(`/api/jobs/${jobId}`);
         state.job = res.data;
     } catch (error) {
         console.error("Error fetching job", error);
